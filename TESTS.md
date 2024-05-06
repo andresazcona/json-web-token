@@ -1,60 +1,60 @@
 # SET DE PRUEBAS TECNICAS
 
-## Pruebas para el endpoint de Login (`/login`):
+### Pruebas para el endpoint de Login (/login):
 
-### Inicio de Sesión Exitoso:
-- Status: Pendiente
-- Envía una solicitud POST a `/api/auth/login`.
-- Incluye las credenciales correctas (email y password) en el cuerpo de la solicitud.
-- Verifica que recibas un código de estado 200 y un mensaje de éxito en la respuesta.
-- Comprueba que la cookie de sesión se haya establecido correctamente en la respuesta.
+1. **Inicio de Sesión Exitoso:**
+   - **Enlace de la Solicitud:** `http://localhost:3000/api/auth/login`
+   - **Método:** POST
+   - **Cuerpo de la Solicitud:**
+     ```json
+     {
+       "email": "admin@admin.com",
+       "password": "admin"
+     }
+     ```
+   
+2. **Inicio de Sesión Fallido:**
+   - **Enlace de la Solicitud:** `http://localhost:3000/api/auth/login`
+   - **Método:** POST
+   - **Cuerpo de la Solicitud:** Credenciales incorrectas o incompletas.
 
-### Inicio de Sesión Fallido:
-- Status: Pendiente
-- Envía una solicitud POST a `/api/auth/login`.
-- Incluye credenciales incorrectas o incompletas en el cuerpo de la solicitud.
-- Verifica que recibas un código de estado 401 (No autorizado) en la respuesta.
-- Comprueba que no se haya establecido ninguna cookie de sesión.
+### Pruebas para el endpoint de Perfil (/profile):
 
-## Pruebas para el endpoint de Perfil (`/profile`):
+3. **Acceso al Perfil Protegido:**
+   - **Enlace de la Solicitud:** `http://localhost:3000/api/profile`
+   - **Método:** GET
+   - **Cuerpo de la Solicitud:** No se requiere, pero asegúrate de incluir la cookie de sesión válida.
 
-### Acceso al Perfil Protegido:
-- Status: Pendiente
-- Envía una solicitud GET a `/api/profile`.
-- Asegúrate de incluir la cookie de sesión válida en la solicitud.
-- Verifica que recibas un código de estado 200 en la respuesta.
-- Comprueba que los datos del perfil sean correctos en la respuesta.
+4. **Intento de Acceso al Perfil sin Autenticación:**
+   - **Enlace de la Solicitud:** `http://localhost:3000/api/profile`
+   - **Método:** GET
+   - **Cuerpo de la Solicitud:** No se requiere.
 
-### Intento de Acceso al Perfil sin Autenticación:
-- Status: Pendiente
-- Envía una solicitud GET a `/api/profile` sin incluir la cookie de sesión.
-- Verifica que recibas un código de estado 401 (No autorizado) en la respuesta.
+### Pruebas para el endpoint de Formulario (/form):
 
-## Pruebas para el endpoint de Formulario (`/form`):
+5. **Envío de Formulario Correcto:**
+   - **Enlace de la Solicitud:** `http://localhost:3000/api/form`
+   - **Método:** POST
+   - **Cuerpo de la Solicitud:**
+     ```json
+     {
+       "text": "Este es un texto de prueba para el formulario."
+     }
+     ```
 
-### Envío de Formulario Correcto:
-- Status: Pendiente
-- Envía una solicitud POST a `/api/form`.
-- Asegúrate de incluir la cookie de sesión válida en la solicitud.
-- Incluye un cuerpo de solicitud con una propiedad llamada "text".
-- Verifica que recibas un código de estado 200 en la respuesta.
-- Comprueba que el texto enviado en la solicitud sea el mismo que se devuelve en la respuesta.
+6. **Intento de Envío de Formulario sin Autenticación:**
+   - **Enlace de la Solicitud:** `http://localhost:3000/api/form`
+   - **Método:** POST
+   - **Cuerpo de la Solicitud:** No se requiere, pero asegúrate de no incluir la cookie de sesión.
 
-### Intento de Envío de Formulario sin Autenticación:
-- Status: Pendiente
-- Envía una solicitud POST a `/api/form` sin incluir la cookie de sesión.
-- Verifica que recibas un código de estado 401 (No autorizado) en la respuesta.
+### Pruebas para el endpoint de Contactos (/contacts):
 
-## Pruebas para el endpoint de Contactos (`/contacts`):
+7. **Acceso a la Lista de Contactos:**
+   - **Enlace de la Solicitud:** `http://localhost:3000/api/contacts`
+   - **Método:** GET
+   - **Cuerpo de la Solicitud:** No se requiere, pero asegúrate de incluir la cookie de sesión válida.
 
-### Acceso a la Lista de Contactos:
-- Status: Pendiente
-- Envía una solicitud GET a `/api/contacts`.
-- Asegúrate de incluir la cookie de sesión válida en la solicitud.
-- Verifica que recibas un código de estado 200 en la respuesta.
-- Comprueba que la lista de contactos sea válida y contenga datos.
-
-### Intento de Acceso a la Lista de Contactos sin Autenticación:
-- Status: Pendiente
-- Envía una solicitud GET a `/api/contacts` sin incluir la cookie de sesión.
-- Verifica que recibas un código de estado 401 (No autorizado) en la respuesta.
+8. **Intento de Acceso a la Lista de Contactos sin Autenticación:**
+   - **Enlace de la Solicitud:** `http://localhost:3000/api/contacts`
+   - **Método:** GET
+   - **Cuerpo de la Solicitud:** No se requiere.
