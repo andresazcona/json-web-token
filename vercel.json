@@ -15,28 +15,8 @@
     ],
     "routes": [
         {
-          "src": "/api/auth/login",
-          "dest": "src/controllers/authController.js"
-        },
-        {
-          "src": "/api/profile",
-          "dest": "src/controllers/profileController.js"
-        },
-        {
-          "src": "/api/form",
-          "dest": "src/controllers/formController.js"
-        },
-        {
-          "src": "/api/contacts",
-          "dest": "src/controllers/contactsController.js"
-        },
-        {
-          "src": "/api/(.*)",
-          "dest": "/$1"
-        },
-        {
           "src": "/(.*)",
-          "dest": "/api/$1"
+          "dest": "src/app.js"
         }
       ]
     }
