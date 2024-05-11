@@ -2,10 +2,10 @@
   "name": "jwt-for-the-win-andres-azcona",
   "version": "1.0.0",
   "description": "Desarrollo de Aplicaciones Web\r NOMBRE_DE_LOS_ESTUDIANTES\r Andres Azcona\r 2024 - I",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node index.js"
 
 
     
