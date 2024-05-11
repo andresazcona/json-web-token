@@ -1,4 +1,4 @@
-# SET DE PRUEBAS TECNICAS
+# SET DE PRUEBAS TECNICAS JWT
 
 ### Pruebas para el endpoint de Login (/login):
 

@@ -1,10 +1,10 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
-const authMiddleware = require('./middleware/authMiddleware');
-const authRoutes = require('./routes/authRoutes');
-const profileController = require('./controllers/profileController');
-const formController = require('./controllers/formController');
-const contactsController = require('./controllers/contactsController');
+const authMiddleware = require('./src/middleware/authMiddleware');
+const authRoutes = require('./src/routes/authRoutes');
+const profileController = require('./src/controllers/profileController');
+const formController = require('./src/controllers/formController');
+const contactsController = require('./src/controllers/contactsController');
 
 const app = express();
 
