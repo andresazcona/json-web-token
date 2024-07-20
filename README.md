@@ -1,7 +1,6 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ajKCO3Oe)
+
 # Desarrollo de Aplicaciones Web
 ## Andres Azcona
-### Universidad de La Sabana
 #### 2024 - I
 #### DEPLOY LINK: https://jwt-for-the-win-finished.vercel.app
 
@@ -20,12 +19,6 @@ Crear endpoints seguros en el backend utilizando una capa de seguridad basada en
 - Form: Endpoint protegido que permite hacer submit de un formulario, la propiedad que se espera recibir en el `body` de esté método es `text` (así en inglés y todo en minúsuclas). Básicamente es un method post que se espera que devuelva el mismo texto que se envió.
 - Contacts: Endpoint protegido que permite recuperar una lista aleatoria de usuarios.
 
-### Requisitos
-- El trabajo debe ser entregado en los grupos del proyecto final.
-- La entrega máxima es el 16 de mayo a las 6:55 am.
-- Se debe implementar la seguridad utilizando cookies de sesión.
-- Los endpoints protegidos deben verificar la validez de la cookie de sesión para permitir el acceso.
-- Lea bien la actividad y asegúrese de seguir las instrucciones presentadas en este documento.
 
 ### Endpoints
 1. **Login (`/login`)**
@@ -41,15 +34,4 @@ Crear endpoints seguros en el backend utilizando una capa de seguridad basada en
 4. **Contacts (`/contacts`)**
    - Endpoint protegido que permite recuperar una lista aleatoria de usuarios.
 
-### Evaluación
-- Implementación del endpoint de inicio de sesión: 1.5 puntos.
-- Protección de endpoints: 1.5 puntos.
-- Uso correcto de cookies de sesión: 1 punto.
-- Implementación de los métodos adecuados 1 punto.
 
-### Importante
-- Si la tarea no está desplegada, no será calificada.
-- No se calificarán tareas tardías.
-- Si el repositorio no se marca, se obtendrá una calificación de 0.
-
-¡Buena suerte con la actividad! 
